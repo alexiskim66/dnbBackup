@@ -1,0 +1,120 @@
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: #FFFAEE;
+    width: 1200px;
+    margin: auto;
+}
+
+.topmenu  li{
+    display: inline-block;
+    padding-left: 15px;
+}
+.topmenu ul{
+    position: relative;
+    top:0px;
+    left: 900px;
+}
+.topmenu hr{
+    position: relative;
+    top : -10px;
+    left: 450px;
+    width: 200px;
+}
+
+#logo{
+    position: relative;
+    left: -150px;
+    top : -20px;
+
+    width:350px;
+    padding: 0%;
+    border : 0px;
+}
+
+.sidemenu li{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius:  10px;
+    width: 160px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    background-color: #FFFAEE;
+    box-shadow: 2px 2px rgb(37, 36, 36);
+}
+.sidemenu{
+    position: relative;
+    top:230px;
+    left: 20px;
+
+    float: left;
+    text-align: center;
+    font-family: 'Nanum Pen Script','Nanum Myeongjo', serif, cursive;
+}
+
+#container{
+    position: relative;
+    top:-30px;
+    left:100px;
+    
+    width:870px;
+    height: 700px;
+    margin:0 auto;
+    font-weight: 500;/*글씨 굵기나 폰트사이즈는 각 페이지 html에서 필요에 따라 재조정해주세요*/
+    background-image: url("./image/책그림_선없음.png") ;
+}
+
+#centerBody{
+    font-family: 'Nanum Pen Script', cursive;
+    position: relative;
+    top:50px;
+    background-color:#FFFAEE;
+    width: 780px;
+    height: 650px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    height: 600px;
+    overflow-y:scroll;
+    overflow-x:hidden; 
+}
+footer{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    clear: both;
+    color: rgb(133, 121, 121);
+
+    border-top: 1px solid rgb(133, 121, 121);
+    position:relative;
+    width:1130px;
+    margin:20px auto;
+}
+footer > span{
+    color: rgb(128, 100, 91);
+    font-size: 20px;
+    font-weight: 900;
+}
+hr{
+    clear:both;
+    position:relative;
+    width:1130px;
+    margin:0 auto;
+    z-index:11;
+    color: white;
+}
+a{
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    }
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+

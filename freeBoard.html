@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="dnb.css" rel="stylesheet" type="text/css">
+    <title>동네북 첫 페이지</title>
+    <script>
+        //사이드 메뉴와 탑메뉴 자바스크립트로 마우스 hover시 색깔전환효과 적용
+        function OnMouseIn(elem) 
+        {
+        elem.style.color = "rgb(128, 100, 91)";
+        elem.style.shadow = "2px 2px rgb(156, 77, 57)";
+        }
+        function OnMouseOut(elem) 
+        {
+        elem.style.color = "black";
+        elem.style.shadow = "2px 2px rgb(156, 77, 57)";
+        }
+        function OnMouseInTopMenu(elem) 
+        {
+        elem.style.color = "rgb(128, 100, 91)";
+        }
+        function OnMouseOutTopMenu(elem) 
+        {
+            elem.style.color = "black";
+        }
+        </script>
+    <style>
+   
+    #container{
+            background-size: 880px 700px;
+            background-repeat: no-repeat;
+            font-size: 30px;
+        }
+    
+  
+    </style>
+</head>
+<body>
+    
+        <div class="topmenu">
+            <ul>
+                <li ><a href="myPage.html" onmouseover="OnMouseInTopMenu(this)" onmouseout="OnMouseOutTopMenu(this)">마이페이지</a></li>
+                <li><a href="logout.html" onmouseover="OnMouseInTopMenu(this)" onmouseout="OnMouseOutTopMenu(this)">로그아웃</a></li>
+            </ul>
+            <hr>
+        </div>
+        <a href="index.html"><img  id="logo" src="image/logo.png" width="180px"></a>
+        <nav class="sidemenu">
+            <ul>
+               <!--각 메뉴별로 하이퍼링크 html파일 연결해두었습니다.-->
+                <a href="map.html"><li onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">기본정보제공 </li></a>
+                <a href="onlineMeeting.html"><li onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">온라인 모임</li></a>
+                <a href="offlineMeeting.html"><li onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">오프라인 모임</li></a>
+                <a href="recommendFeed.html"><li onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">도서추천피드</li></a>
+                <a href="bookReport.html"><li onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">독후감 기록장</li></a>
+                <a href="freeBoard.html"><li onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">자유게시판</li></a>
+            </ul>
+        </nav>
+            <div id="container"><!--책테두리 아이콘을 넣은 부분입니다-->
+                <div id="centerBody">
+                    <!--내용을 넣는 부분입니다. 자유롭게 수정하셔도 됩니다-->
+                    동네북 <br>
+                    동덕여자대학교<br>
+                    작동확인 ㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐ
+                    멋쟁이사자9기_라이언하트조<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    <var>김유림 김지원 이나연 정은영<br></var>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    멋쟁이사자9기_라이언하트조<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    <var>김유림 김지원 이나연 정은영<br></var>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+
+
+                    김유림 김지원 이나연 정은영<br>김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+
+                    김유림 김지원 이나연 정은영<br>김유림 김지원 이나연 정은영<br>
+                    김유림 김지원 이나연 정은영<br>
+
+                </div>
+           </div> 
+       
+        <footer><br><span>라이언하트</span> 동덕여자 대학교 멋쟁이사자 9기 라이언하트/ 김유림 김지원 이나연 정은영 <span>라이언하트</span> 
+            </footer>
+    
+</body>
+</html>
