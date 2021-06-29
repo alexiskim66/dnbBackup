@@ -12,13 +12,13 @@ body{
 .topmenu ul{
     position: relative;
     top:0px;
-    left: 900px;
+    left: 800px;
 }
 .topmenu hr{
     position: relative;
     top : -10px;
-    left: 450px;
-    width: 200px;
+    left: 430px;
+    width: 360px;
 }
 
 #logo{
