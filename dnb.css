@@ -23,31 +23,61 @@ body{
 
 #logo{
     position: relative;
-    left: -150px;
     top : -20px;
 
     width:350px;
     padding: 0%;
     border : 0px;
 }
+#showMenu{
+    position: relative;
+    top:100px;
+    left:-325px;
+    width:-0px;
+    height: -0px;
+    z-index: 10;
+}
+#showMenu img{
+    position: relative;
+    top:0px;
+
+    width : 120px;
+}
+#hide{ 
+    position: relative;
+    top:20px;
+    left:25px;
+
+    background-color: #FFFAEE;
+    width:30px;
+    height: 10px;
+    z-index: 12;
+}
 
 .sidemenu li{
+    position: relative;
+    top:90px;
+
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius:  10px;
-    width: 160px;
+    width: 130px;
+    color:black;
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 20px;
-    background-color: #FFFAEE;
-    box-shadow: 2px 2px rgb(37, 36, 36);
+    margin-left: -40px;
+    border: 2px solid rgb(37, 36, 36);
 }
 .sidemenu{
     position: relative;
-    top:230px;
-    left: 20px;
+    top:0px;
+    left: 0px;
 
+    border-radius: 5px;
+    width:134px;
+    height: 700px;
+  /*  display: none;*/
     float: left;
     text-align: center;
     font-family: 'Nanum Pen Script','Nanum Myeongjo', serif, cursive;
@@ -55,26 +85,26 @@ body{
 
 #container{
     position: relative;
-    top:-30px;
-    left:100px;
+    top:-10px;
+    left:40px;
     
-    width:870px;
+    width:1060px;
     height: 700px;
+    
     margin:0 auto;
     font-weight: 500;/*글씨 굵기나 폰트사이즈는 각 페이지 html에서 필요에 따라 재조정해주세요*/
     background-image: url("./image/책그림_선없음.png") ;
+    background-size: 1060px 700px;
+    background-repeat: no-repeat;
 }
 
 #centerBody{
-    font-family: 'Nanum Pen Script', cursive;
     position: relative;
     top:50px;
+    font-family: 'Nanum Pen Script', cursive;
     background-color:#FFFAEE;
-    width: 780px;
-    height: 650px;
+    width: 910px;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 120px;
     height: 600px;
     overflow-y:scroll;
     overflow-x:hidden; 
@@ -97,16 +127,9 @@ footer > span{
     font-size: 20px;
     font-weight: 900;
 }
-hr{
-    clear:both;
-    position:relative;
-    width:1130px;
-    margin:0 auto;
-    z-index:11;
-    color: white;
-}
+
 a{
-    font-weight: 900;
+    font-weight: 800;
     color: black;
     text-decoration: none;
     }

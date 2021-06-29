@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link href="dnb.css" rel="stylesheet" type="text/css">
-    <title>동네북 첫 페이지</title>
+    <title>동네북 자유게시판</title>
     <script>
         //사이드 메뉴와 탑메뉴 자바스크립트로 마우스 hover시 색깔전환효과 적용
         function OnMouseIn(elem) 
@@ -30,13 +30,37 @@
             elem.style.color = "black";
         }
         </script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var cnt=1;
+    $(document).ready(function() {
+        $("#showMenu").click(function() {
+            if(cnt==0)
+            {
+                $(".sidemenu").slideDown("slow");
+                $("#centerBody").animate( {
+                    left: '0px'
+                });
+                cnt=1;
+            }
+            else
+            {
+                $(".sidemenu").slideUp("slow");
+                $("#centerBody").animate( {
+                    left: '20px'
+                });
+                cnt=0;
+            }
+        });
+    });
+    </script>
     <style>
    
     #container{
-            background-size: 880px 700px;
-            background-repeat: no-repeat;
             font-size: 30px;
+            text-align: center;
         }
+
     
   
     </style>
@@ -51,6 +75,8 @@
             <hr>
         </div>
         <a href="index.html"><img  id="logo" src="image/logo.png" width="180px"></a>
+        <button id = "showMenu"><img  src="image/menuTip.png "></button>
+        <div id="hide"></div>
         <nav class="sidemenu">
             <ul>
                <!--각 메뉴별로 하이퍼링크 html파일 연결해두었습니다.-->
@@ -64,43 +90,11 @@
         </nav>
             <div id="container"><!--책테두리 아이콘을 넣은 부분입니다-->
                 <div id="centerBody">
-                    <!--내용을 넣는 부분입니다. 자유롭게 수정하셔도 됩니다-->
-                    동네북 <br>
-                    동덕여자대학교<br>
-                    작동확인 ㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐ
-                    멋쟁이사자9기_라이언하트조<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    <var>김유림 김지원 이나연 정은영<br></var>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    멋쟁이사자9기_라이언하트조<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    <var>김유림 김지원 이나연 정은영<br></var>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
+                 <h1>자유게시판</h1>
+                 <hr>
 
-
-                    김유림 김지원 이나연 정은영<br>김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-
-                    김유림 김지원 이나연 정은영<br>김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
+                    <br><br><br><br>아직 글이 없습니다:) 글을 자유롭게 작성해주세요!<br><br><br><br><br>
+                 <span>[0]</span>
 
                 </div>
            </div> 

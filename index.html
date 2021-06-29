@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1600px, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link href="dnb.css" rel="stylesheet" type="text/css">
-    <title>동네북 첫 페이지</title>
+    <title>동네북 인덱스</title>
     <script>
         //사이드 메뉴와 탑메뉴 자바스크립트로 마우스 hover시 색깔전환효과 적용
         function OnMouseIn(elem) 
@@ -30,11 +30,34 @@
             elem.style.color = "black";
         }
         </script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    //사이드 메뉴 넣었다 뺐다하는거 + 영향받아서 움직인 #centerBody부분 원래자리로 가게
+    var cnt=1;
+    $(document).ready(function() {
+        $("#showMenu").click(function() {
+            if(cnt==0)
+            {
+                $(".sidemenu").slideDown("slow");
+                $("#centerBody").animate( {
+                    left: '0px'
+                });
+                cnt=1;
+            }
+            else
+            {
+                $(".sidemenu").slideUp("slow");
+                $("#centerBody").animate( {
+                    left: '20px'
+                });
+                cnt=0;
+            }
+        });
+    });
+    </script>
     <style>
    
     #container{
-            background-size: 880px 700px;
-            background-repeat: no-repeat;
             font-size: 30px;
         }
     
@@ -51,6 +74,8 @@
             <hr>
         </div>
         <a href="index.html"><img  id="logo" src="image/logo.png" width="180px"></a>
+        <button id = "showMenu"><img  src="image/menuTip.png "></button>
+        <div id="hide"></div>
         <nav class="sidemenu">
             <ul>
                <!--각 메뉴별로 하이퍼링크 html파일 연결해두었습니다.-->
@@ -65,42 +90,15 @@
             <div id="container"><!--책테두리 아이콘을 넣은 부분입니다-->
                 <div id="centerBody">
                     <!--내용을 넣는 부분입니다. 자유롭게 수정하셔도 됩니다-->
-                    동네북 <br>
-                    동덕여자대학교<br>
-                    작동확인 ㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐ
-                    멋쟁이사자9기_라이언하트조<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    <var>김유림 김지원 이나연 정은영<br></var>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    멋쟁이사자9기_라이언하트조<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    <var>김유림 김지원 이나연 정은영<br></var>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-
-
-                    김유림 김지원 이나연 정은영<br>김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
-
-                    김유림 김지원 이나연 정은영<br>김유림 김지원 이나연 정은영<br>
-                    김유림 김지원 이나연 정은영<br>
+                   
+                   <h1>동네북 소개</h1>
+                   동덕여자대학교 멋쟁이사자9기 '라이언하트'에서 개발했습니다:)<br><br>
+                   이 서비스의 이름이 동네북인 이유는 
+                   책을 통해 동네 사람들을 만날 수 있다는 의미와 <br>온라인에서도 동네사람을 만나듯 다른 동네 사람들을 만날 수 있다는 의미를 가지기 때문입니다
+                <br><br>책을 읽고 이야기를 나누고 싶은 사람들을 위한 서비스이며, 온라인과 오프라인 모두에서 만날 수 있습니다
+                <br><br>개인의 프로필에 '관심있는 분야'를 체크하시고 관심분야가 같은 주민들의 독후감을 받아보세요!<br>
+                또 모임할 때 나와 관심분야가 같은 주민을 찾을 수 도 있습니다 :)!
+                  
 
                 </div>
            </div> 
